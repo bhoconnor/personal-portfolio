@@ -33,6 +33,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#connect">Connect</a></li>
+          <li><a href="#message">Leave a Message</a></li>
         </ul>
       </nav>
     </header>
@@ -92,23 +93,46 @@
     <section id="connect">
       <h2>Connect</h2>
       <!--paste links to your email, GitHub, social media, etc. -->
-      <p>Find me online on:</p>
+      <p>Find me online at:</p>
       <ul>
-        <li>-GitHub: https://github.com/bhoconnor</li>
-        <li>-LinkedIn: https://www.linkedin.com/in/bhoconnor/</li>
-        <li>-Replit: https://replit.com/@bhoconnor</li>
-        <li>-Code Sandbox: https://codesandbox.io/u/bhoconnor</li>
+        <li><a href= https://github.com/bhoconnor>GitHub</a></li>
+        <li><a href= https://www.linkedin.com/in/bhoconnor>LinkedIn</a></li>
+        <li><a href= https://replit.com/@bhoconnor>Replit</a></li>
+        <li><a href= https://codesandbox.io/u/bhoconnor>Code Sandbox</a></li>
       </ul>
     </section>
 
+    <!--Leave a Message section w/Name, Email, Message, & Submit-->
+    <section id="message">
+      <h2>Leave a Message</h2>
+      <form name="leave_message">
+        <input type="text" name="name" required="true" />
+        <label name="name">Name</label><br />
+        <input type="email" name="email" required="true" />
+        <label name="email">Email</label><br />
+        <textarea name="message" required="true"></textarea>
+        <label name="message">Message</label><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!--Messages section-->
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
+    <!--Jump back to the top-->
     <aside>
       <p>
         <em><a href="#home">Back to top...</a></em>
       </p>
     </aside>
 
+    <!--Footer w/copyright etc. (appended in JS)-->
     <footer></footer>
 
+    <!--JavaScript-->
     <script src="js/index.js"></script>
   </body>
 </html>

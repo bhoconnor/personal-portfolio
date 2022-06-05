@@ -147,7 +147,7 @@ hr {
   filter: brightness(1.8);
 }
 
-/* mainly for jump to the top line at bottom */
+/* mainly for "jump to the top" part at bottom */
 .corrected-margin-right {
   padding-right: 2em;
 }

@@ -80,3 +80,29 @@ messageForm.addEventListener("submit", (e) => {
   email.value = "";
   message.value = "";
 });
+
+//AJAX SECTION////////////////////////////////////////////////////////////////////////////////////////////////////
+var githubRequest = new XMLHttpRequest();
+
+//opens a request with GET below & URL where request is going///
+githubRequest.open("GET", "https://api.github.com/users/bhoconnor/repos");
+
+//send the request
+githubRequest.send();
+
+//event handler / callback function
+githubRequest.onreadystatechange = function () {
+  if (githubRequest.readyState === 4) {
+    var repositories = JSON.parse(githubRequest.responseText);
+    console.log(repositories);
+    //append repositories to project section of site/////////////////////
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    //for loop to run through repositories
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerHTML = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  }
+};

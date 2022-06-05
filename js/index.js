@@ -1,4 +1,4 @@
-//SOME VARIABLES
+//SOME VARIABLES////////////////////////////////////////////////////////////////////////////////////
 //date variables
 const today = new Date();
 const thisYear = today.getFullYear();
@@ -11,13 +11,13 @@ const skillsList = skillsSection.querySelector("ul");
 //variable for leave_message form
 const messageForm = document.querySelector('[name="leave_message"]');
 
-//COPYRIGHT & FOOTER
+//COPYRIGHT & FOOTER////////////////////////////////////////////////////////////////////////////////////
 //copyright
-copyright.innerHTML = "&copy; Brendan O'Connor, " + thisYear;
+copyright.innerHTML = "&nbsp;&nbsp;&copy; Brendan O'Connor, " + thisYear;
 //Append copyright to footer
 footer.appendChild(copyright);
 
-//SKILLS LOOP
+//SKILLS LOOP////////////////////////////////////////////////////////////////////////////////////
 //for loop to show skills
 for (let i = 0; i < skills.length; i++) {
   const skill = document.createElement("li");
@@ -25,7 +25,7 @@ for (let i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
-//FORM SUBMISSION PROCESS
+//FORM SUBMISSION PROCESS////////////////////////////////////////////////////////////////////////////////////
 //event listener for when form is submitted
 messageForm.addEventListener("submit", (e) => {
   //stop refresh
@@ -59,7 +59,7 @@ messageForm.addEventListener("submit", (e) => {
     `<a href="mailto:${emailValue}">${nameValue}</a>` +
     `<span> wrote: ${messageValue}</span>`;
 
-  //ADD REMOVE BUTTON & LISTENER, APPEND REMOVE BUTTON, & RESET VALUES
+  //ADD REMOVE BUTTON & LISTENER, APPEND REMOVE BUTTON, & RESET VALUES///////////////////////////////////////////
   //add remove button w/text & button type
   const removeButton = document.createElement("button");
   removeButton.innerText = "Remove";

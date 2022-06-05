@@ -1,0 +1,358 @@
+/* ================================= 
+  Base CSS Styles
+==================================== */
+
+/* BELOW ORGANIZED BY SELECTOR TYPE IN PART, IN PART BY SECTION  **********************************************************/
+
+/* SOME UNIVERSAL SELECTORS OR FEATURES  **********************************************************/
+/* text color */
+* {
+  color: brown;
+}
+
+* {
+  line-height: 1.3;
+}
+
+/*revive below if need to fix margin on right, to avoid text going so far, etc.*/
+/* 
+* {
+  margin-right: 5%;
+} */
+
+/* FLEXBOX SECTION FOR BASE CSS  **********************************************************/
+.one-a-experience-heading-ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.leave-message {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TYPE/ELEMENT SELECTORS  **********************************************************/
+body {
+  background-color: yellowgreen;
+}
+
+header {
+  position: relative;
+  margin-top: -0.6%;
+  margin-left: -0.6%;
+  margin-right: -0.6%;
+}
+
+h1 {
+  font-size: 0.1em;
+  font-weight: 900;
+  color: darkslategray;
+  font-family: fantasy, serif;
+}
+
+h2 {
+  font-size: 1.4em;
+  font-weight: 900;
+  color: darkslategray;
+  font-family: fantasy, serif;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: darkslategray;
+}
+
+p {
+  font-size: 0.8em;
+  font-family: "Georgia", serif;
+  padding-right: 20%;
+}
+
+li {
+  font-family: "Georgia", serif;
+  font-size: 80%;
+  padding-right: 20%;
+}
+
+hr {
+  border: 10px solid gray;
+}
+
+/* SOME OF THE ID SELECTORS **********************************************************/
+#top-banner {
+  position: fixed;
+  z-index: 1;
+  background-color: gray;
+  width: 100vw;
+  font-size: 1.5em;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 0.4em;
+}
+
+#profile-pic {
+  /* set pic to stay in absolute relationship to fixed #top-banner */
+  position: absolute;
+  /* set in front of nav text */
+  z-index: 1;
+  top: -40%;
+  left: 70%;
+  width: 24%;
+  height: auto;
+}
+
+#welcome-line {
+  font-size: 0.9em;
+  margin-top: 7em;
+}
+
+/* maybe come back to try to get jump-to-top to be visible all the time while scrolling later, w/fixed or sticky */
+/* #jump-to-top {
+  position: sticky;
+} */
+
+/* SOME OF THE CLASS SELECTORS **********************************************************/
+.padding-top-main-parts {
+  padding-top: 0.15em;
+}
+
+.padding-bottom-main-parts {
+  padding-bottom: 0.25em;
+}
+
+/* mainly for name banner at top */
+.padding-left {
+  padding-left: 0.15em;
+}
+
+/* nav section */
+/* li bullets */
+.nav {
+  color: darkslategray;
+}
+/* li text */
+.nav a {
+  color: darkslategray;
+  filter: brightness(1.4);
+  /* set behind #top-banner */
+  z-index: -1;
+}
+/* li text, lighten when hover */
+.nav a:hover {
+  color: darkslategray;
+  filter: brightness(1.8);
+}
+
+/* mainly for jump to the top line at bottom */
+.corrected-margin-right {
+  padding-right: 2em;
+}
+
+.corrected-margin-left {
+  margin-left: 0.6%;
+}
+
+.corrected-margin-top {
+  margin-top: 0.6%;
+}
+
+/*mainly for experience section border*/
+.one-b-experience-heading-li {
+  list-style: none;
+  border: medium dashed gray;
+  margin-right: 20%;
+  margin-left: -3%;
+  background-color: #88b62c;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/*mainly for list section border*/
+.list-borders {
+  list-style: none;
+  border: medium dashed gray;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 20%;
+  margin-left: -2%;
+  background-color: #88b62c;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/*mainly for experience subheading border*/
+.two-experience-subheadings-ul {
+  margin-left: -4%;
+}
+
+/*mainly for experience section italics*/
+.subheading {
+  font-style: italic;
+}
+
+/* mainly for footer to show green at bottom */
+.corrected-margin-bottom {
+  margin-bottom: 2%;
+}
+
+/* SOME DESCENDANT SELECTORS  **********************************************************/
+/* for gray ul bullets */
+/* ul li {
+  color: darkslategray;
+} */
+
+/* for styling JS-created lists */
+.ul-parent-for-styled-blocks li {
+  list-style: none;
+  border: medium dashed gray;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 20%;
+  margin-left: -2%;
+  background-color: #88b62c;
+  font-weight: bold;
+  line-height: 2;
+}
+
+/* LEAVE A MESSAGE SECTION  **********************************************************/
+/* change labels */
+.message-label {
+  background-color: whitesmoke;
+  font-size: 95%;
+}
+
+/*change message boxes via input & textarea CSS*/
+.input-class {
+  font-size: 105%;
+  padding: 0.3%;
+  border: medium dashed gray;
+}
+
+/*change margins around message boxes, message labels, & button*/
+.message-area-top-margins {
+  margin-top: 1.25em;
+}
+
+/*button styling*/
+#submit-button {
+  padding: 0.3%;
+  margin-top: 1.01em;
+  margin-left: 0.1em;
+  background-image: url("../img/irish_flag.svg.png");
+  background-size: 100%;
+  border: medium solid gray;
+  border-bottom-color: darkslategray;
+  border-left-color: darkslategray;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/* FOOTER SECTION  **********************************************************/
+footer {
+  background-color: gray;
+  margin-left: -0.6%;
+  margin-right: -0.6%;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/* for laptops *****************************/
+@media screen and (min-width: 950px) {
+  h1 {
+    font-size: 200%;
+    font-weight: 900;
+    color: darkslategray;
+    font-family: fantasy, serif;
+  }
+
+  h2 {
+    font-size: 160%;
+    font-weight: 900;
+    color: darkslategray;
+    font-family: fantasy, serif;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 130%;
+    font-weight: 400;
+    color: darkslategray;
+  }
+
+  p {
+    font-size: 1em;
+    font-family: "Georgia", serif;
+    padding-right: 20%;
+  }
+
+  li {
+    font-family: "Georgia", serif;
+    font-size: 100%;
+    padding-right: 20%;
+  }
+
+  #top-banner {
+    position: fixed;
+    z-index: 1;
+    background-color: gray;
+    width: 100vw;
+    font-size: 250%; /*overrides h1 for banner i believe */
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    padding-left: 0.4em;
+  }
+
+  #profile-pic {
+    /* set pic to stay in absolute relationship to fixed #top-banner */
+    position: absolute;
+    /* set in front of nav text */
+    z-index: 1;
+    top: -30%;
+    left: 79%;
+    width: 12%;
+    height: auto;
+  }
+
+  #welcome-line {
+    font-size: 1.2em;
+    margin-top: 8.5em;
+  }
+}
+
+/* for tablets ***************************/
+@media screen and (min-width: 450px) and (max-width: 950px) {
+  #top-banner {
+    position: fixed;
+    z-index: 1;
+    background-color: gray;
+    width: 100vw;
+    font-size: 250%; /*overrides h1 for banner i believe */
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    padding-left: 0.4em;
+  }
+
+  #profile-pic {
+    /* set pic to stay in absolute relationship to fixed #top-banner */
+    position: absolute;
+    /* set in front of nav text */
+    z-index: 1;
+    top: -45%;
+    left: 77%;
+    width: 19%;
+    height: auto;
+  }
+
+  #welcome-line {
+    font-size: 1.2em;
+    margin-top: 8.5em;
+  }
+}

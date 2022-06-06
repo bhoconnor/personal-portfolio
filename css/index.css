@@ -76,6 +76,7 @@ li {
   font-family: "Georgia", serif;
   font-size: 80%;
   padding-right: 20%;
+  margin-top: 0.25%;
 }
 
 hr {
@@ -108,6 +109,17 @@ hr {
 #welcome-line {
   font-size: 0.9em;
   margin-top: 7em;
+}
+
+#breakfast {
+  width: 15%;
+  margin-right: 1%;
+  height: auto;
+}
+
+/* still working on this, probably need to put in flexbox */
+#video {
+  size: 75%;
 }
 
 /* maybe come back to try to get jump-to-top to be visible all the time while scrolling later, w/fixed or sticky */

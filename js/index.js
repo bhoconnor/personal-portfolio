@@ -95,7 +95,31 @@ githubRequest.onreadystatechange = function () {
   if (githubRequest.readyState === 4) {
     var repositories = JSON.parse(githubRequest.responseText);
     console.log(repositories);
-    //append repositories to project section of site/////////////////////
+    // //append repositories to project section of site/////////////////////
+    // const projectSection = document.getElementById("projects");
+    // const projectList = projectSection.querySelector("ul");
+    // //for loop to run through repositories
+    // for (let i = 0; i < repositories.length; i++) {
+    //   const project = document.createElement("li");
+    //   project.innerHTML = repositories[i].name;
+    //   projectList.appendChild(project);
+    // }
+  }
+};
+
+//FETCH API SECTION////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//fetch repositories
+fetch("https://api.github.com/users/bhoconnor/repos")
+  //chain `then` method to your `fetch` call and pass it a function that returns the response JSON data
+  .then((response) => {
+    console.log(response.json());
+  })
+  //chain another `then` method and pass it a function, inside of which you can paste the code from your previous "load" event listener function
+  .then((repositories) => {
+    //define repositories variable again (from above)--realizer this probably isn't as clean as it should be between this & AJAX above, got a bit turned around but seems to be working!
+    var repositories = JSON.parse(githubRequest.responseText);
+    //append repositories to project section of site//////////////
     const projectSection = document.getElementById("projects");
     const projectList = projectSection.querySelector("ul");
     //for loop to run through repositories
@@ -104,5 +128,4 @@ githubRequest.onreadystatechange = function () {
       project.innerHTML = repositories[i].name;
       projectList.appendChild(project);
     }
-  }
-};
+  });

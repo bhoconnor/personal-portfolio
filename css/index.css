@@ -331,7 +331,7 @@ footer {
     z-index: 1;
     background-color: gray;
     width: 100vw;
-    font-size: 250%; /*overrides h1 for banner i believe */
+    font-size: 300%; /*overrides h1 for banner i believe */
     padding-top: 3%;
     padding-bottom: 1.5%;
     padding-left: 0.4em;
@@ -372,7 +372,7 @@ footer {
     z-index: 1;
     background-color: gray;
     width: 100vw;
-    font-size: 250%; /*overrides h1 for banner i believe */
+    font-size: 275%; /*overrides h1 for banner i believe */
     padding-top: 3%;
     padding-bottom: 1.5%;
     padding-left: 0.4em;

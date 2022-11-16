@@ -101,10 +101,12 @@ hr {
   z-index: 1;
   background-color: gray;
   width: 100vw;
-  font-size: 1.5em;
+  /* Changed to 1.2 from the more optimal 1.5em b/c font type is changing on some iPhones, making font too big. If can eventually get responsive design figured out for only Safari-specific font alternative, can change back. */
+  font-size: 1.2em;
   padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 0.4em;
+  /* Tried to use either -webkit-text-size-adjust or text-size-adjust with a colon then negative percent to fix safari issues, didn't work--may be able to find more resources for this at https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust or https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/StandardCSSProperties.html#//apple_ref/doc/uid/TP30001266--webkit-text-size-adjust or https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices or https://www.evotech.net/blog/2007/07/web-development-for-the-iphone/ */
 }
 
 #profile-pic {
@@ -408,3 +410,29 @@ footer {
     width: 250px;
   }
 }
+
+/* possibly put @media query below for iPhone-like devices (to account for font issues). none of below seem to work as of now though so commented out; see top-banner section above too for links to possible resources to do this, & also check https://stackoverflow.com/questions/62874933/media-query-for-safari-browser & http://browserhacks.com/ ************************** */
+/* 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+  @media {
+    /* Your Class 
+    #top-banner {
+      font-size: 1em; /*overrides h1 for banner i believe 
+  }}
+
+  @media not all and (min-resolution:.001dpcm) { 
+    @media {
+        /* Your Class 
+        #top-banner {
+          font-size: 1em; /*overrides h1 for banner i believe 
+    }}
+
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+      property: value;} 
+
+@media screen and (min-width: 0\0) {
+  #top-banner {
+    font-size: 1em; /*overrides h1 for banner i believe 
+  }
+} 
+*/

@@ -5,7 +5,15 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement("p");
 //skills variables
-const skills = ["JavaScript", "CSS", "HTML"];
+const skills = [
+  "JavaScript",
+  "CSS",
+  "HTML",
+  "React",
+  "SQLite",
+  "Node.js",
+  "Express",
+];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 //variable for leave_message form
@@ -82,6 +90,7 @@ messageForm.addEventListener("submit", (e) => {
 });
 
 //AJAX SECTION////////////////////////////////////////////////////////////////////////////////////////////////////
+// For displaying GitHub repos
 var githubRequest = new XMLHttpRequest();
 
 //opens a request with GET below & URL where request is going///
@@ -117,7 +126,7 @@ fetch("https://api.github.com/users/bhoconnor/repos")
   })
   //chain another `then` method and pass it a function, inside of which you can paste the code from your previous "load" event listener function
   .then((repositories) => {
-    //define repositories variable again (from above)--realizer this probably isn't as clean as it should be between this & AJAX above, got a bit turned around but seems to be working!
+    //define repositories variable again (from above)--realize this probably isn't as clean as it should be between this & AJAX above, got a bit turned around but seems to be working!
     var repositories = JSON.parse(githubRequest.responseText);
     //append repositories to project section of site//////////////
     const projectSection = document.getElementById("projects");

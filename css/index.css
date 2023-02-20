@@ -45,6 +45,7 @@
 
 /* TYPE/ELEMENT SELECTORS  **********************************************************/
 body {
+  background-image: url("../img/Bckgrnd_image_Circuit_board-v4.png");
   background-color: yellowgreen;
 }
 

@@ -10,9 +10,11 @@ const skills = [
   "CSS",
   "HTML",
   "React",
-  "SQLite",
   "Node.js",
   "Express",
+  "Figma",
+  "P5.js",
+  "SQLite",
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");

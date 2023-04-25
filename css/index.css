@@ -363,7 +363,7 @@ footer {
   #profile-pic {
     /* set pic to stay in absolute relationship to fixed #top-banner */
     position: absolute;
-    /* set in front of nav text */
+    /* set in front of nav text on "Z-axis" */
     z-index: 1;
     top: -30%;
     left: 79%;

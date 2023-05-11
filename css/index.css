@@ -90,6 +90,27 @@ hr {
   border: 10px solid gray;
 }
 
+/* LINKS */
+/* unvisited link */
+a:link {
+  color: darkslategray;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(94, 108, 108);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(102, 31, 31);
+}
+
+/* selected link */
+a:active {
+  color: darkslategray;
+}
+
 /* PARTS OF HEADER, BANNER, & WELCOME ***********************************************************************/
 header {
   position: relative;

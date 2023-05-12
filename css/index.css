@@ -161,11 +161,31 @@ header {
 }
 
 .icons {
-  width: 7%;
+  width: 15%;
   padding-top: 0.5em;
   margin-left: 1%;
   margin-right: 1%;
   height: auto;
+}
+
+/* for laptop breakfast & icons ************/
+@media screen and (min-width: 950px) {
+  #breakfast {
+    width: 15%;
+  }
+
+  .icons {
+    width: 7%;
+  }
+  }
+}
+
+/* for tablets breakfast ***************************/
+@media screen and (min-width: 450px) and (max-width: 950px) {
+  #breakfast {
+    width: 20%;
+  }
+
 }
 
 /* VIDEO (IN PROJECTS SECTION) **********************************************************/
@@ -242,12 +262,20 @@ header {
   border: medium dashed gray;
   padding-top: 0em;
   padding-bottom: 0.5%;
-  margin-right: 60%;
+  margin-right: 30%;
   margin-left: -2%;
   margin-bottom: 1%;
   background-color: #88b62c;
   font-weight: bold;
   line-height: 2;
+}
+
+/* for laptop list borders ************/
+@media screen and (min-width: 950px) {
+  .list-borders {
+    margin-right: 60%;
+  }
+
 }
 
 /*mainly for experience subheading border*/
@@ -275,7 +303,7 @@ header {
 .skills-container {
   display: flex;
   flex-flow: wrap column;
-  max-height: 400px; */
+  max-height: 400px;
 }
 
 .ul-parent-for-styled-blocks li {
@@ -332,7 +360,7 @@ footer {
 }
 
 /* ================================= 
-  Media Queries
+  Some Media Queries (some above)
 ==================================== */
 
 /* for laptops *****************************/
@@ -405,20 +433,6 @@ footer {
     margin-top: 8.5em;
   }
 
-  #breakfast {
-    width: 15%;
-    margin-right: 1%;
-    height: auto;
-  }
-
-  .icons {
-    width: 9%;
-    padding-top: 4%;
-    margin-left: 1%;
-    margin-right: 2.5%;
-    height: auto;
-  }
-
   #video {
     height: 250px;
     width: auto;
@@ -452,20 +466,6 @@ footer {
   #welcome-line {
     font-size: 1.2em;
     margin-top: 8.5em;
-  }
-
-  #breakfast {
-    width: 20%;
-    margin-right: 1%;
-    height: auto;
-  }
-
-  .icons {
-    width: 3%;
-    padding-top: 0.5em;
-    margin-left: 1%;
-    margin-right: 1%;
-    height: auto;
   }
 
   /* #video {

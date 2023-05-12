@@ -312,12 +312,19 @@ header {
   border: medium dashed gray;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-left: -2%;
   margin-bottom: 1%;
   background-color: #88b62c;
   font-weight: bold;
   line-height: 2;
+}
+
+/* for laptop list Skills margin-right ************/
+@media screen and (min-width: 950px) {
+  .ul-parent-for-styled-blocks li {
+    margin-right: 10%;
+  }
 }
 
 /* LEAVE A MESSAGE SECTION  **********************************************************/

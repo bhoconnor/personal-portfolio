@@ -247,15 +247,23 @@ header {
   margin-top: 0.6%;
 }
 
-/*mainly for experience section border*/
+/*mainly for Experience section border*/
 .one-b-experience-heading-li {
   list-style: none;
   border: medium dashed gray;
-  margin-right: 20%;
-  margin-left: -3%;
+  margin-right: 10%;
+  margin-left: -10%;
   background-color: #88b62c;
   font-weight: bold;
   line-height: 2;
+}
+
+/* for laptop Experience section ************/
+@media screen and (min-width: 950px) {
+  .one-b-experience-heading-li {
+    margin-right: 20%;
+    margin-left: -3%;
+  }
 }
 
 /*mainly for list section border (in Connect section)*/

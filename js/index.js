@@ -16,6 +16,8 @@ const skills = [
   "P5.js",
   "SQLite",
   "WebSockets",
+  "Git",
+  "GitHub",
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");

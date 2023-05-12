@@ -236,13 +236,13 @@ header {
   line-height: 2;
 }
 
-/*mainly for list section border*/
+/*mainly for list section border (in Connect section)*/
 .list-borders {
   list-style: none;
   border: medium dashed gray;
   padding-top: 0em;
-  padding-bottom: 0em;
-  margin-right: 20%;
+  padding-bottom: 0.5%;
+  margin-right: 60%;
   margin-left: -2%;
   background-color: #88b62c;
   font-weight: bold;
@@ -270,13 +270,13 @@ header {
   color: darkslategray;
 } */
 
-/* for styling JS-created lists */
+/* for styling JS-created lists (Skills section) */
 .ul-parent-for-styled-blocks li {
   list-style: none;
   border: medium dashed gray;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-right: 20%;
+  margin-right: 60%;
   margin-left: -2%;
   background-color: #88b62c;
   font-weight: bold;
@@ -404,10 +404,10 @@ footer {
   }
 
   .icons {
-    width: 3%;
-    padding-top: 0.5em;
+    width: 9%;
+    padding-top: 4%;
     margin-left: 1%;
-    margin-right: 1%;
+    margin-right: 2.5%;
     height: auto;
   }
 

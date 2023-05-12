@@ -258,8 +258,16 @@ header {
   line-height: 2;
 }
 
-/* for laptop Experience section ************/
+/* for laptop Experience section <li> ************/
 @media screen and (min-width: 950px) {
+  .one-b-experience-heading-li {
+    margin-right: 20%;
+    margin-left: -3%;
+  }
+}
+
+/* for tablets Experience section <li> ***************************/
+@media screen and (min-width: 450px) and (max-width: 950px) {
   .one-b-experience-heading-li {
     margin-right: 20%;
     margin-left: -3%;

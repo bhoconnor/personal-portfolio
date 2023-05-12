@@ -271,13 +271,20 @@ header {
 } */
 
 /* for styling JS-created lists (Skills section) */
+.skills-container {
+  display: flex;
+  flex-flow: wrap column;
+  max-height: 400px; */
+}
+
 .ul-parent-for-styled-blocks li {
   list-style: none;
   border: medium dashed gray;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-right: 60%;
+  margin-right: 10%;
   margin-left: -2%;
+  margin-bottom: 1%;
   background-color: #88b62c;
   font-weight: bold;
   line-height: 2;

@@ -12,12 +12,16 @@ const skills = [
   "React",
   "Node.js",
   "Express",
-  "Figma",
   "P5.js",
   "SQLite",
   "WebSockets",
   "Git",
   "GitHub",
+  "App Store Connect",
+  "TestFlight",
+  "Google Play Console",
+  "Figma",
+  "Jira",
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");

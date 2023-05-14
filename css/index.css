@@ -316,24 +316,62 @@ header {
   color: darkslategray;
 } */
 
-/* for styling JS-created lists (Skills section) */
+/* container for styling JS-created lists (Skills section) */
 .skills-container {
   display: flex;
   flex-flow: wrap column;
-  max-height: 400px;
+  max-height: 500px;
+  /* Guidance for below 2 items (basically evenly space <li> boxes /columns within container: https://www.w3docs.com/snippets/css/how-to-set-space-between-flexbox-items.html#:~:text=To%20change%20the%20space%20between,%22space%2Daround%22%20value.  */
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -30px;
 }
 
+/* for laptop container for styling JS-created lists (Skills section) *****/
+@media screen and (min-width: 950px) {
+  .skills-container {
+    max-height: 400px;
+  }
+}
+
+/* for tablet container for styling JS-created lists (Skills section) *****/
+@media screen and (min-width: 450px) and (max-width: 950px) {
+  .skills-container {
+    max-height: 300px;
+  }
+}
+
+/* for <li> boxes around each skill */
 .ul-parent-for-styled-blocks li {
+  width: 140px;
   list-style: none;
   border: medium dashed gray;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  margin-right: 5%;
-  margin-left: -2%;
+  padding-right: 1px;
+  margin-right: 1px;
+  margin-left: -1px;
   margin-bottom: 1%;
   background-color: #88b62c;
   font-weight: bold;
   line-height: 2;
+}
+
+/* for laptop <li> boxes around each skill *****/
+@media screen and (min-width: 950px) {
+  .ul-parent-for-styled-blocks li {
+    width: 260px;
+    margin-right: 1%;
+    padding-right: 10px;
+  }
+}
+
+/* for tablet <li> boxes around each skill *****/
+@media screen and (min-width: 450px) and (max-width: 950px) {
+  .ul-parent-for-styled-blocks li {
+    width: 150px;
+    margin-right: 1%;
+  }
 }
 
 /* LEAVE A MESSAGE SECTION  **********************************************************/

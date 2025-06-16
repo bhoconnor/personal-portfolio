@@ -10,7 +10,6 @@ const skills = [
   "CSS",
   "HTML",
   "React",
-  "Node.js",
   "Express",
   "P5.js",
   "SQLite",
@@ -22,6 +21,11 @@ const skills = [
   "Google Play Console",
   "Figma",
   "Jira",
+  "SPSS",
+  "R",
+  "NVivo",
+  "MAXQDA",
+  "REDCap",
 ];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
